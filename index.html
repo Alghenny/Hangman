@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Ahorcado</title>
+  <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+
+</head>
+
+<body background="blue">
+  
+    <div class="container">
+      
+      <h1 class="text-center">Ahorcado</h1>
+      <div class="float-right">Respuestas incorrectas: <span id = "mistakes">0</span> of <span id="maxMistakes"></span></div>
+    
+      <div class="text-center float-right">
+        <img src="./resources/0.jpg" alt="Hangman" id="hangmanPics">
+        <p>Adivina la Palabra:</p>
+        <p id="wordSpotlight"></p>
+        
+        <div id="keyboard">
+
+        </div>
+      
+        <button class="btn btn-info" onClick="resetGame()">Reiniciar</button>
+
+      </div>
+    
+    </div>
+
+    <script src="./Module/module.js"></script>
+
+</body>
+</html>
